@@ -1,0 +1,19 @@
+ALGORITHM Recherche
+VAR
+    str=STRING
+    tab=Names : ARRAY_OF CHAR;
+    i=INTEGER=0
+    s=INTEGER=0
+    c=INTEGER=0
+    v=INTEGER=0
+    n=tab.length
+BEGIN
+FOR i FROM 0 TO n-1 DO
+IF (tab[i]=" ") THEN
+  s:=s+1
+END_IF
+IF (tab[i]="a,e,u,i,o,y") THEN
+  v:=v+1
+END_IF
+END_FOR
+END
